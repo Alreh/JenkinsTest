@@ -20,13 +20,29 @@ function browser(){
     // Blink engine detection
     var isBlink = (isChrome || isOpera) && !!window.CSS;
 
-var output = 'Detecting browsers by ducktyping:<hr>';
+var output = 'Checking browser used for testing:<hr>';
 output += 'isFirefox: ' + isFirefox + '<br>';
 output += 'isChrome: ' + isChrome + '<br>';
 output += 'isSafari: ' + isSafari + '<br>';
 output += 'isOpera: ' + isOpera + '<br>';
 output += 'isIE: ' + isIE + '<br>';
 output += 'isEdge: ' + isEdge + '<br>';
-output += 'isBlink: ' + isBlink + '<br>';
-document.body.innerHTML = output;
+output += 'isBlink: ' + isBlink + '<br><br>';
+document.getElementById("first").innerHTML = output;
+}
+
+function calculationExample(){
+	var x = 100;
+	var y = 250;
+	var z = x + y;
+	checkSum(z);
+}
+
+function checkSum(z){
+	if(z == 350){
+		document.getElementById("second").innerHTML = "calculationExample check passed!";
+	}
+	else{
+		document.getElementById("second").innerHTML = "calculationExample did not match the expected number, check didnt pass!";
+	}
 }
