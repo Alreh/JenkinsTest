@@ -40,7 +40,7 @@ function calculationExample(){
 
 function checkSum(z){
 	if(z == 350){
-		document.getElementById("second").innerHTML = "calculationExample check passed!";
+		document.getElementById("second").innerHTML = "calculationExample result was valid, check passed!";
 	}
 	else{
 		document.getElementById("second").innerHTML = "calculationExample did not match the expected number, check didnt pass!";
