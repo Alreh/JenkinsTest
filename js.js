@@ -9,12 +9,10 @@ function calculationExample(){
 function checkSum(z){
 	if(z == 350){
 		console.log("1/1 OK: Checks passed");
-		currentBuild.result = 'SUCCESS';
 		return;
 	}
 	else{
 		console.log("0/1: Check did not pass");
-		currentBuild.result = 'FAILURE';
 		return;
 	}
 }
