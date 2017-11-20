@@ -1,7 +1,7 @@
 calculationExample();
 function calculationExample(){
 	var x = 100;
-	var y = 220;
+	var y = 250;
 	var z = x + y;
 	checkSum(z);
 }
