@@ -38,6 +38,8 @@ function calculationExample(){
 	checkSum(z);
 }
 
+
+@test
 function checkSum(z){
 	if(z == 350){
 		document.getElementById("second").innerHTML = "calculationExample result was valid, check passed!";
